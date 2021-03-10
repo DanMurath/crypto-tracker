@@ -53,3 +53,45 @@
     }
   }
 }
+@media (max-width: 993px) {
+  .coin-container {
+    p {
+      font-size: 11px;
+    }
+    .coin-row {
+      width: 90%;
+      .coin {
+        display: flex;
+        align-items: center;
+        padding-right: 14px;
+        min-width: 110px;
+        img {
+          height: 15px;
+          width: 15px;
+          margin-right: 10px;
+        }
+        h1 {
+          font-size: 11px;
+          width: 40px;
+        }
+        .coin-symbol {
+          display: none;
+        }
+      }
+      .coin-data {
+        .coin-price {
+          width: 100px;
+        }
+        .coin-volume {
+          display: none;
+        }
+        .coin-marketcap {
+          width: 100px;
+        }
+        .coin-percent {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

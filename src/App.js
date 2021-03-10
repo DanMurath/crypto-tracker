@@ -8,6 +8,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
+    //fetch coingecko api with axios
     axios
       .get(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=100&page=1&sparkline=false"
@@ -19,10 +20,11 @@ function App() {
   }, []);
 
   const handleChange = (e) => {
-    setSearch(e.target.value);
+    setSearch(e.target.value); //filter through data when searching
   };
 
   const filteredCoins = coins.filter((coin) =>
+    //sets search/coin names all to lower case. Capitals won't affect results
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
