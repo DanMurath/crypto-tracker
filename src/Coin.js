@@ -1,4 +1,5 @@
 const Coin = ({
+  //import props from App.js
   name,
   image,
   symbol,
